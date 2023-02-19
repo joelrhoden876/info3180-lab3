@@ -28,11 +28,9 @@ def contact():
     if form.validate_on_submit():
         name = form.name.data
         subject = form.subject.data
-        email = form.email.data
-        sender = (name, email)
+        email = form.email.data 
         message = form.message.data
-        recipients=["joelrhodenjm@gmail.com"]
-        msg = Message(subject, sender=("Senders Name", "from@example.com"), recipients=["joelrhodenjm@gmail.com"])
+        msg = Message(subject, sender= (str(name), str(email)), recipients=["joelrhodenjm@gmail.com"])
         msg.body = message
         mail.send(msg)
         flash('Message Successfully Sent!')
