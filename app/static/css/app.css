@@ -1,3 +1,32 @@
 body {
     padding-top: 5rem;
+    font-size: 35;
 }
+
+.Mydiv{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    font-size: 35;
+    padding-top: 10px;
+}
+
+button {
+    background-color: #0093f5; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .btn{
+    padding-top: 10px;
+  }
+
+  .required{
+    color: red;
+  }
